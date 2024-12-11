@@ -1,0 +1,17 @@
+version: 2
+
+exposures:
+  - name: Executive Dashboard
+    type: dashboard
+    maturity: low
+    url: https://7d2233ee.us1a.app.preset.io/superset/dashboard/8/?native_filters_key=E91vG5K5WTmbvYXu_zLWP6SAxpSyZyDv-g0dS_0IioWyNwTNhkxPmVMZkTTSluuD
+    description: Executive Dashboard about Airbnb listings and hosts
+
+
+    depends_on:
+      - ref('dim_listings_with_hosts')
+      - ref('mart_fullmoon_reviews')
+
+    owner:
+      name: Venkat Rao
+      email: venkat05091990@gmail.com
